@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To do list</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div></div>
+        <h2>Things to do:</h2>
+        
+        <table id="things_table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th class="button_td">Action</th>
+                </tr>
+            </thead>
+            <tbody id="to_do_list"></tbody>
+        </table>
+        
+        <form method="post">
+            <label> Description:
+                <textarea placeholder="Add description..." id="description" name="description"></textarea>
+            </label>
+            <button id="submit">Add</button>
+        </form>
+    </body>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,15 @@
+.incompleted {
+    background-color: #34c2e3
+}
+.completed {
+    background-color: crimson
+}
+td,th {
+    width: 400px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.button_td {
+    width: 60px;
+}
