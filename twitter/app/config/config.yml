@@ -72,3 +72,6 @@ fos_user:
     registration:
         form:
             type: app_user_registration
+    registration:
+        form:
+            handler: app.form.handler.registration
