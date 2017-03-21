@@ -1,9 +1,9 @@
 <?php
 
-namespace TwitterBundle;
+namespace AppBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class TwitterBundle extends Bundle
+class AppBundle extends Bundle
 {
 }
