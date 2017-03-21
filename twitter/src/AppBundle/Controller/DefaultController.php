@@ -16,19 +16,10 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/")
-     * @Template()
      */
     public function indexAction(Request $request)
     {
-        $user = $this->getUser();
-        return array('user'=>$user);
+        return $this->redirectToRoute("app_user_index");
     }
 
-    /**
-     * @Route("/aaa")
-     */
-    public function aaaAction()
-    {
-        return new Response('aaaaaaa');
-    }
 }

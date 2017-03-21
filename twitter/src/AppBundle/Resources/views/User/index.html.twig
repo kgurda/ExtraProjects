@@ -1,0 +1,19 @@
+{% extends '@FOSUser/layout.html.twig' %}
+
+{% block fos_user_content %}
+
+    <h2>Witaj {{ user.name }}</h2>
+
+    <form method="POST" action="{{ path('app_user_index') }}">
+        <textarea name="post_description"></textarea>
+        <input type="submit" value="Opublikuj">
+    </form>
+
+    <div>
+        <table>
+        {% for post in posts|reverse %}
+            <tr><td>{{ post.description  }} </td> <td>{{ post.date.format('Y-m-d H:i:s') }}</td></tr>
+        {% endfor %}
+        </table>
+    </div>
+{% endblock fos_user_content %}
